@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 20px;
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .wrapper{
+            max-width: 550px;
+            background-color: antiquewhite;
+            box-shadow: 0 2px 8px burlywood;
+            margin: auto;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .header{      
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .subheader{
+            text-align: center;  
+            padding: 10px;    
+                  
+        }
+        .date{
+            border: 1.5px solid;
+            border-style: dashed;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 100px;
+        }
+        .content{
+            text-align:justify;
+            padding: 15px;
+        }
+        .btn{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            padding: 12px;           
+            background-color: black;
+            width: 20%;
+            border-radius: 10px;
+            margin: auto;
+        }
+        .footer{
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+        hr{
+            border: 3px solid;
+            border-radius: 100px;
+            
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            Hello {{first_name}}
+        </div>
+        <div class="subheader">
+            Confirmation: Your Enquiry and Application Received
+
+        </div>
+
+        <div class="date">
+            Date: {{ocx_month_name}} {{ocx_day}}, {{ocx_year}}
+
+        </div>
+        <div class="content">
+            We have received your enquiry and are delighted to assist you on your journey. Please find the complete
+            details and procedure by clicking the 'Apply' button below. <br><br>
+
+            Ensure you complete the process on time to achieve your desired outcome within the expected timeframe.
+        </div>
+        <a href="#" class="btn">APPLY</a>
+        <div class="footer">
+            For more assistance, visit our <a href="" style="color: black;">WEBSITE</a>
+        </div>
+        <hr>
+        <div class="footer">
+            This notification email has been sent to you at <a href=""  style="color: black; text-decoration: none;">{{email}}</a> . To unsubscribe, please click <a href="" style="color: black;">here</a> or our address
+            is: 1309 E 3rd Ave Suite 202 Durango, CO 81301
+        </div>
+    </div>
+
+</body>
+
+</html>
